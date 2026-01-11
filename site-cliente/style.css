@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('./font/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+}
+
+body{
+    background-image: linear-gradient(45deg ,#034ff3e8, #cacfe7be 3%, #034ff3e8);
+}
+.menu{
+    width: 100%;
+    height: 54px;
+    background-color: #ffffffee;
+    border-bottom: 1px solid #9bc7d6;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 10px #287088;
+
+}
+#logo{
+    width: 45px;
+    margin: -3px 10px;
+    border-radius: 100px;
+}
+#nome{
+    font-family: 'Google Sans';
+}
+
+.apresentaçao{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    border: 1px solid rgb(0, 60, 255);
+    box-shadow: 0 1px 10px #44616ba1;
+}
+#p1{
+    width: 660px;
+    height: 100%;
+    position: relative;
+}
+#local-texto{
+    width: 100%;
+    background-color: rgba(240, 240, 240, 0.801);
+    display: flex;
+    justify-content: center;
+}
+.tx{
+    width: 100%;
+    height: 100%;
+    font-family: 'Google Sans';
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 21px;
+    text-indent: 1em;
+}
+
+.explicar{
+    margin-top: 80px;
+    background-color: #287088   ;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    background-color:rgba(82, 153, 177, 0);
+    box-shadow: 0 1px 10px #0c2129b2;
+    
+}
+#local-texto2{
+    background-color: rgb(255, 255, 255,0.9);
+    font-family: 'Google Sans';
+    width: 276px;
+    height: 276px;
+    position: relative;
+    border-radius: 10px;
+}
+.img2{
+    width: 150px; 
+    border-radius: 10px;
+    position: absolute ;
+    left: auto;
+    right: 64px;
+    box-shadow: 0px 1px 1px 2px #9bc7d6;
+    top: 10px;
+}   
+.tx2{
+    width: 260px;
+    position: relative;
+    margin-top: 175px;
+    font-family: 'Google Sans';
+    left: 8px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.serviços{
+    background-color: aquamarine;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.atributos:hover{
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+.atributos{
+    width: 250px;
+    transform-style: preserve-3d;
+}
+.frente,.atras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #201f1f;
+
+}
+.frente{
+    background-color: blueviolet;
+}
+.atras{
+    background-color: brown;
+    transform: rotateY(180deg);
+}
+
+
+.content{
+    margin-top: 30px;
+    width:100% ;
+    height: 200px;
+    background-color: chartreuse;
+}
