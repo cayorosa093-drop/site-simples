@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: 'Google Sans';
-  src: url('./font/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  src: url('/site-cliente/font/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
 }
 
 body{
@@ -133,7 +133,55 @@ body{
 .atras{
     background-color: brown;
     transform: rotateY(180deg);
+}.serviços {
+    background-color: aquamarine;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    perspective: 1000px;
 }
+
+.atributos {
+    width: 250px;
+    height: 180px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.atributos:hover {
+    transform: rotateY(180deg);
+}
+
+.frente,
+.atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #201f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.frente {
+    background-size: cover;
+    background-position: center;
+}
+.atras {
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+    flex-direction: column;
+}
+
 
 
 .content{
